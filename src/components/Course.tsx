@@ -7,7 +7,7 @@ function TodoApp() {
     const [task, setTask] = useState<string>("");        // เก็บค่าที่พิมพ์ใน input 
     const [tasks, setTasks] = useState<string[]>([]);      // เก็บรายการงานทั้งหมด 
 
-    const [Courses, setCourses] = useState<Course[]>([]); // เก็บรายการวิชาทั้งหมด
+    const [_Courses, _setCourses] = useState<Course[]>([]); // เก็บรายการวิชาทั้งหมด
 
     const addTask = () => { 
         if (task.trim() === "") return;            // กัน input ว่าง 
